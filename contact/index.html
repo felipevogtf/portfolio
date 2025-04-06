@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/portfolio/favicon.svg"><meta name="generator" content="Astro v5.5.5"><title>Contacto</title><meta name="description" content="Formulario de contacto de Felipe Vogt"><script type="module" src="/portfolio/_astro/Layout.astro_astro_type_script_index_0_lang.Dhd0cdVC.js"></script><link rel="stylesheet" href="/portfolio/_astro/contact.Frfmmb8l.css">
+<style>main[data-astro-cid-uw5kdbxl]{min-height:100vh;display:flex;flex-direction:column}#footer{margin-top:auto}.contact[data-astro-cid-uw5kdbxl]{padding-top:100px;width:100%;box-sizing:border-box}.experience[data-astro-cid-uw5kdbxl]{margin-bottom:30px}.experience[data-astro-cid-uw5kdbxl] h3[data-astro-cid-uw5kdbxl]{margin-top:3px;margin-bottom:5px}.form-control[data-astro-cid-uw5kdbxl]{display:flex;flex-direction:column;gap:10px;margin-bottom:20px}.form-control[data-astro-cid-uw5kdbxl] label[data-astro-cid-uw5kdbxl]{font-size:1rem;font-weight:500}.form-control[data-astro-cid-uw5kdbxl] input[data-astro-cid-uw5kdbxl],.form-control[data-astro-cid-uw5kdbxl] textarea[data-astro-cid-uw5kdbxl]{padding:10px;border-radius:5px;border:1px solid var(--primary-variant);font-size:1rem;color:var(--text-color)}.form-control[data-astro-cid-uw5kdbxl] button[data-astro-cid-uw5kdbxl]{padding:10px;border-radius:5px;background-color:var(--primary);color:#fff;border:none;cursor:pointer}
+a[data-astro-cid-crqf33vu]{text-decoration:none;color:inherit}.icon-button[data-astro-cid-crqf33vu]{background:transparent;border:none;display:flex;flex-direction:row;align-items:center;justify-content:center;text-transform:capitalize;cursor:pointer;padding:5px;border-radius:var(--border-radius);transition:transform .2s ease}.icon-button[data-astro-cid-crqf33vu] svg[data-astro-cid-crqf33vu]{font-size:1.5rem}.icon-button[data-astro-cid-crqf33vu]:hover{transform:scale(1.2)}
+</style></head> <body> <div class="noise"></div> <nav id="navbar" data-astro-cid-5blmo7yk> <div class="logo" data-astro-cid-5blmo7yk> <a href="/portfolio/#main" aria-label="Ir a la sección principal" data-astro-cid-5blmo7yk> <svg width="0.8em" height="1em" data-astro-cid-5blmo7yk="true" data-icon="logo">   <symbol id="ai:local:logo" viewBox="0 0 80 100"><path fill="currentColor" d="M40 18.575 80 0v77.095L40.289 100 0 77.095V0zM27.56 32.044v41.201l10.252.139v-16.2l15.885.139-.144-9.637-15.741.28v-6.705h16.463v-9.217z"/></symbol><use href="#ai:local:logo"></use>  </svg> </a> </div> <div class="menu" data-astro-cid-5blmo7yk> <a href="/portfolio/#about-me" aria-label="Ir a la sección Sobre mi" data-astro-cid-5blmo7yk> Sobre mi </a><a href="/portfolio/experience" aria-label="Ir a la sección Experiencia" data-astro-cid-5blmo7yk> Experiencia </a><a href="/portfolio/projects" aria-label="Ir a la sección Proyectos" data-astro-cid-5blmo7yk> Proyectos </a> </div> <div class="buttons" data-astro-cid-5blmo7yk> <!-- <ThemeToggle /> --> </div> <div class="hamburger" onclick="toggleSidebar()" data-astro-cid-5blmo7yk> <svg width="1em" height="1em" data-astro-cid-5blmo7yk="true" data-icon="menu">   <symbol id="ai:local:menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16M4 6h16M4 18h16"/></symbol><use href="#ai:local:menu"></use>  </svg> </div> </nav> <div id="overlay" class="sidebar-overlay" onclick="toggleSidebar()" data-astro-cid-5blmo7yk></div> <nav id="sidebar" class="sidebar" data-astro-cid-5blmo7yk> <div class="sidebar__header" data-astro-cid-5blmo7yk> <svg width="0.8em" height="1em" viewBox="0 0 80 100" data-astro-cid-5blmo7yk="true" data-icon="logo">   <use href="#ai:local:logo"></use>  </svg> <span class="close-btn" onclick="toggleSidebar()" data-astro-cid-5blmo7yk>&times;</span> </div> <div class="sidebar__menus" data-astro-cid-5blmo7yk> <a href="/portfolio/#about-me" data-astro-cid-5blmo7yk>Sobre mi</a><a href="/portfolio/experience" data-astro-cid-5blmo7yk>Experiencia</a><a href="/portfolio/projects" data-astro-cid-5blmo7yk>Proyectos</a> </div> </nav>  <script>
+    var nav = document.getElementById("navbar");
+    window.onscroll = function () {
+        if (window.scrollY > 22) {
+            nav.classList.add("scrolled");
+        } else {
+            nav.classList.remove("scrolled");
+        }
+    };
+</script> <script>
+    function toggleSidebar() {
+        var sidebar = document.getElementById("sidebar");
+        var overlay = document.getElementById("overlay");
+
+        if (sidebar.classList.contains("sidebar--active")) {
+            sidebar.classList.remove("sidebar--active");
+            overlay.classList.remove("sidebar-overlay--active");
+        } else {
+            sidebar.classList.add("sidebar--active");
+            overlay.classList.add("sidebar-overlay--active");
+        }
+    }
+</script>   <main data-astro-cid-uw5kdbxl> <section class="section contact" data-astro-cid-uw5kdbxl> <h2 data-astro-cid-uw5kdbxl>Contacto</h2> <form id="contact-form" data-email="felipevogt.f@gmail.com" data-astro-cid-uw5kdbxl> <div class="form-control" data-astro-cid-uw5kdbxl> <label for="user_name" data-astro-cid-uw5kdbxl>Nombre</label> <input type="text" name="user_name" placeholder="Tu nombre" required data-astro-cid-uw5kdbxl> </div> <div class="form-control" data-astro-cid-uw5kdbxl> <label for="user_email" data-astro-cid-uw5kdbxl>Email</label> <input type="email" name="user_email" placeholder="Tu email" required data-astro-cid-uw5kdbxl> </div> <div class="form-control" data-astro-cid-uw5kdbxl> <label for="message" data-astro-cid-uw5kdbxl>Mensaje</label> <textarea name="message" placeholder="Tu mensaje" required data-astro-cid-uw5kdbxl>                    </textarea> </div> <div class="form-control" data-astro-cid-uw5kdbxl> <button type="submit" data-astro-cid-uw5kdbxl> Enviar </button> </div> </form> </section> <footer class="section" id="footer" data-astro-cid-5jp7rtjd> <span data-astro-cid-5jp7rtjd>© All Right Reserved</span> <div class="social-media" data-astro-cid-5jp7rtjd> <a class="icon-button" href="https://github.com/felipevogtf/" rel="noopener noreferrer" aria-label="Github Profile" target="_blank" data-astro-cid-crqf33vu> <svg width="1em" height="1em" data-astro-cid-crqf33vu="true" data-icon="github">   <symbol id="ai:local:github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></symbol><use href="#ai:local:github"></use>  </svg> </a>  <a class="icon-button" href="https://www.linkedin.com/in/felipevogtf/" rel="noopener noreferrer" aria-label="LinkedIn Profile" target="_blank" data-astro-cid-crqf33vu> <svg width="1em" height="1em" data-astro-cid-crqf33vu="true" data-icon="linkedin">   <symbol id="ai:local:linkedin" viewBox="0 0 14 14"><path fill="currentColor" fill-rule="evenodd" d="M2.913 2.362c.26-.268.403-.626.4-.998A1.417 1.417 0 0 0 1.928 0 1.43 1.43 0 0 0 .532 1.364a1.45 1.45 0 0 0 1.396 1.428 1.42 1.42 0 0 0 .985-.43M1.67 4.63c-.587-.013-.987-.022-.987.696v7.992c0 .703.382.689.932.668q.15-.007.314-.008.165.001.314.008c.548.02.922.035.922-.668V5.327c0-.718-.392-.71-.976-.696a11 11 0 0 1-.519 0Zm4.084.015c-.266.053-.437.223-.437.681v7.992c0 .703.367.689.918.668q.15-.007.318-.008.168.001.319.008c.554.02.928.035.928-.668V9.056a1.545 1.545 0 0 1 1.577-1.695 1.534 1.534 0 0 1 1.62 1.663v4.261c0 .704.366.69.917.669q.15-.007.318-.008.168.001.319.008c.551.02.917.035.917-.668V7.83a3.195 3.195 0 0 0-3.388-3.335 2.67 2.67 0 0 0-2.387 1.066c.011-.394-.117-.916-.436-.916-.092 0-.233-.005-.393-.01-.4-.012-.92-.028-1.11.01" clip-rule="evenodd"/></symbol><use href="#ai:local:linkedin"></use>  </svg> </a>  </div> </footer>  </main>  <script>
+        const form = document.getElementById("contact-form");
+        const recipientEmail = form.dataset.email;
+
+        grecaptcha.ready(() => {
+            grecaptcha
+                .execute("6LeGSAwrAAAAAKuHSk1e-GCYsGrh7G58grC9oIwU", {
+                    action: "submit",
+                })
+                .then(async (token) => {
+                    const data = {
+                        service_id: "service_j3sqt0p",
+                        template_id: "template_4ej1h8f",
+                        user_id: "Wgdb_Rf6DOhvCOolm",
+                        template_params: {
+                            user_name: formData.get("user_name"),
+                            user_email: formData.get("user_email"),
+                            message: formData.get("message"),
+                            "g-recaptcha-response": token,
+                        },
+                    };
+
+                    try {
+                        const response = await fetch(
+                            "https://api.emailjs.com/api/v1.0/email/send",
+                            {
+                                method: "POST",
+                                headers: { "Content-Type": "application/json" },
+                                body: JSON.stringify(data),
+                            }
+                        );
+
+                        if (response.ok) {
+                            form.reset();
+                            alert("Mensaje enviado correctamente");
+                        } else {
+                            const mailtoLink = `mailto:${recipientEmail}?subject=Mensaje de ${formData.get("user_name")}&body=${formData.get("message")}`;
+                            window.open(mailtoLink, "_blank");
+                        }
+                    } catch (err) {
+                        const mailtoLink = `mailto:${recipientEmail}?subject=Mensaje de ${formData.get("user_name")}&body=${formData.get("message")}`;
+                        window.open(mailtoLink, "_blank");
+                    }
+                });
+        });
+    </script>  </body></html>
